@@ -1,11 +1,20 @@
 name: ICIO test1
 model: gpt-3.5-turbo-16k
-description: |-
+description: >-
   ICIO framework:
+
   Instruction
+
   Context
+
   Input Data
+
   Output indicator
+
+
+  ref：
+
+  https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/guides/prompts-intro.md 
 prompts:
   - id: Sp6A8oXjVWcT5yMSSICpb
     content: |-
@@ -112,8 +121,14 @@ parameters:
     type: string
   output:
     multiline: true
-    value: 分析市场策略
+    value: |
+      输出的报告中需要涉及以下部分： 
+
+      1. 市场策略
+      2. Pros and Cons 分析
+      3. SWOT 分析
+      4. 建议的发布过程
     type: string
 id: "355121620446085120"
-updatedAt: 2023-09-07T22:55:50.783Z
+updatedAt: 2023-09-07T22:58:15.710Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
