@@ -1,5 +1,119 @@
+name: ICIO test1
+model: gpt-3.5-turbo-16k
+description: |-
+  ICIO framework:
+  Instruction
+  Context
+  Input Data
+  Output indicator
+prompts:
+  - id: Sp6A8oXjVWcT5yMSSICpb
+    content: |-
+      ### Instruction ###
+
+      {{Instruction}}
+    role: system
+  - id: Uui-5fGqGTjY-0W2ebXMc
+    content: |-
+      ### Context ###
+
+      {{Context}}
+    role: system
+  - id: _CXlsh-4MDme6hzLghfnl
+    content: |-
+      ### Input Data ###
+
+      {{Input}}
+    role: system
+  - id: 4LnuSmcWS5dpg0a5rP86_
+    content: |-
+      ### Output indicator ###
+
+      {{output}}
+    role: system
+parameters:
+  Instruction:
+    multiline: true
+    value: 分析AIGNE这个产品的市场策略
+    type: string
+  Context:
+    multiline: true
+    value: |
+      - 当前LLMOp市场刚刚开始
+      - LLMOp 是 LLM 的 Devop， 也就是LLM作为正规服务所需要的运营管理
+    type: string
+  Input:
+    multiline: true
+    value: >-
+      这是AIGNE的设计和介绍：
+
+
+      核心差异点
+                指我们独一无二的，有自己特色的特点。
+
+      No-code 完整 AI 应用的方案
+
+      开源、无第三方依赖，独立部署的运行时
+
+      多种现代软件工程最佳实践 ：IDE/版本管理/测试自动化/部署自动化/Analytics（* 这现阶段还是一个差异点，未来可能大家都会跟进）
+
+
+
+      基础性能
+              指达到类似功能的同类产品都必需要具备的基本能力。 
+
+       Prompt Editor，支持基本的模版能力
+      支持RAG（Retrieval Augmented Generation）方式，能在Prompt里使用多种Dataset （尤其是 Vector DB 采用embedding 的方式获得数据） 
+
+      多Prompt 的编排执行能力，实现prompt 的调用（chain）、条件选择、并行执行等  
+
+      AI 应用的运行时（Runtime），支持 Chat、Form、API 三种方式
+          
+
+      核心场景
+             我们最重要的一些场景：
+
+          AI 应用运行环境（Runtime ）  // 这是最终用户要直接面对的，产品里 to C 的部分
+          Prompt 集成环境IDE
+          测试自动化
+          部署自动化
+
+
+      全部场景
+             其他的场景：
+
+      版本管理
+
+      通过其他blocklet 扩展能力
+
+      部署相关
+
+      多版本部署 （product/staging， A/B test 等）
+
+      配置管理 （cache、失败重试等）
+
+      Analytics和数据统计
+
+      应用界面的定义
+
+      Chat ： 支持theme
+
+      form： 可以简单描述设计，可以apply theme
+
+      API： 自动提供API 文档和test
+
+      应用的组合和发布 （和其他blocklet ，如Pages kit的组合）
+
+      发布为Blocklet
+
+      组合Blocklet
+
+      发布到Store
+    type: string
+  output:
+    multiline: true
+    value: 分析市场策略
+    type: string
 id: "355121620446085120"
-createdAt: 2023-09-07T22:46:32.155Z
-updatedAt: 2023-09-07T22:46:32.155Z
-createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+updatedAt: 2023-09-07T22:55:50.783Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
