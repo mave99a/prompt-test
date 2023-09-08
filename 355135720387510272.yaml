@@ -31,14 +31,18 @@ parameters:
     value: 你扮演一位优秀的作家
     type: string
   Objective:
-    value: 帮我写一本短篇小说的提纲
+    value: 帮我写一本短篇小说的提纲。 请给出小说的标题、故事梗概、章节的标题和梗概
     type: string
   evolve:
-    value: 请采用中文输出
+    value: |-
+      请采用中文输出
+
+      男主角的名字叫 冒海峰 女主角的名字叫 伊翠翠
     type: string
+    multiline: true
   keyresult:
-    value: 讲述在瘟疫流行的时代的追求自由的故事
+    value: 讲述在瘟疫流行的时代的追求自由的年轻人的爱情故事
     type: string
 id: "355135720387510272"
-updatedAt: 2023-09-08T00:29:19.334Z
+updatedAt: 2023-09-08T00:34:34.186Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
