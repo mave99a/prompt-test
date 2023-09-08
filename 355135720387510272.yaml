@@ -1,5 +1,44 @@
+name: BROKE test
+description: |+
+  background
+  role
+  Objective
+  key result
+  evolve 
+
+prompts:
+  - id: 9tGYZg3Ld-4J2SVnLFfpC
+    content: "{{background}}"
+    role: system
+  - id: Vw9qhIOtfqE1SX_XPdFQV
+    content: "{{role}}"
+    role: system
+  - id: QcRMHCjSePS_qwvEJT1B8
+    content: "{{Objective}}"
+    role: system
+  - id: jC-pWzXE1tPAEteH7pAcr
+    content: "{{keyresult}}"
+    role: system
+  - id: 76TyMIiQdrsoO6ahICu3V
+    content: "{{ evolve }}"
+    role: system
+parameters:
+  background:
+    multiline: true
+    value: 我想写一篇小说，讲述中国在Covid疫情下封城封国三年的荒唐故事
+    type: string
+  role:
+    value: 你扮演一位优秀的作家
+    type: string
+  Objective:
+    value: 帮我写一本短篇小说的提纲
+    type: string
+  evolve:
+    value: 请采用中文输出
+    type: string
+  keyresult:
+    value: 讲述在瘟疫流行的时代的追求自由的故事
+    type: string
 id: "355135720387510272"
-createdAt: 2023-09-07T23:42:33.843Z
-updatedAt: 2023-09-07T23:42:33.843Z
-createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+updatedAt: 2023-09-08T00:29:19.334Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
