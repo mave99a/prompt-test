@@ -1,5 +1,65 @@
+versionNote: ""
+name: PTCEFT test
+description: |-
+  Persona 
+  Task
+  Context
+  Example
+  Format 
+  Tone
+
+  https://twitter.com/itsPaulAi
+prompts:
+  - id: k5EtXbDVp-pzFVsl3uT_I
+    content: "{{persona}}"
+    role: system
+  - id: MafvByX9ITIMV-RbojFmW
+    content: "{{task}}"
+    role: system
+  - id: 2frUO9juOOMNIlStnc1NS
+    content: |-
+      Context: 
+      {{context}}
+    role: system
+  - id: ilRG_8agrei9CmJ96s1EP
+    content: |-
+      Example: 
+      {{example}}
+    role: system
+  - id: 3FiykxbaNoiEr-HdPG8Jm
+    content: |-
+      Format:
+      {{format}}
+    role: system
+  - id: naQYpMBtuiOp1GoSjgAUo
+    content: |-
+      Tone: 
+      {{tone}}
+    role: system
+parameters:
+  persona:
+    value: 你是一个专业的小说家
+    type: string
+  task:
+    value: 请下一篇言情小说的故事梗概
+    multiline: true
+    type: string
+  context:
+    multiline: true
+    value: 张勇和李丽相识于华山论剑的活动上， 在令狐冲和张三丰引荐下开始一段江湖儿女情
+    type: string
+  example:
+    type: string
+  format:
+    multiline: true
+    value: |
+      < 小说标题 >
+      < 内容简介 >
+      < 章节目录 >
+    type: string
+  tone:
+    value: 采用金庸的文风
+    type: string
 id: "355949937705353216"
-createdAt: 2023-09-10T05:37:58.379Z
-updatedAt: 2023-09-10T05:37:58.379Z
-createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+updatedAt: 2023-09-10T05:44:03.903Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
