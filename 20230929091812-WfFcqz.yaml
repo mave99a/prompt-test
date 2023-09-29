@@ -1,0 +1,23 @@
+id: 20230929091812-WfFcqz
+createdAt: 2023-09-29T16:18:12.018Z
+updatedAt: 2023-09-29T16:18:12.018Z
+createdBy: ""
+updatedBy: ""
+parameters:
+  poem:
+    multiline: true
+    value: |2-
+       独上江楼思渺然，
+      月光如水水如天。
+      同来望月人何处？
+      风景依稀似去年
+name: 翻译诗词为图片prompt
+model: gpt-3.5-turbo
+temperature: 0.7
+prompts:
+  - id: qIWtXKSO78XPseEwz6HxZ
+    content: |-
+      请把下面的诗词中描写的景色简短句子简要描述出来，用英文输出。 
+
+      {{poem}}
+    role: system
