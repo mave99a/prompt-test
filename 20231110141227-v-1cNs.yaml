@@ -1,0 +1,23 @@
+id: 20231110141227-v-1cNs
+createdAt: 2023-11-10T22:12:27.156Z
+updatedAt: 2023-11-10T22:12:27.156Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: NPhSDrUNPsJQ7fPKCCVvI
+    role: call-prompt
+    output: BROKE test
+    template:
+      id: "355130937131925504"
+      name: CRISPE test
+    parameters:
+      Capacity_and_role: 心理咨询师
+      Insight: 使用精神分析法分析任何问题
+      Statement: "{{ stament }}"
+      Personality: 温和
+      Experiment: 没有
+  - id: u9rdysqavwVGOtbm6sEUt
+    content: 把下面展开为一篇文章： {{ BROKE test }}
+    role: user
+name: 调用测试
+temperature: 0.9
