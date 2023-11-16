@@ -1,0 +1,40 @@
+id: 20231116015202-G6sDJT
+createdAt: 2023-11-16T09:52:02.355Z
+updatedAt: 2023-11-16T09:52:02.355Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: PPDTNyHGm7k2jiOCkRmUF
+    role: user
+    content: |-
+      Write SEO friendly webpage title and descriptions. 
+      The original title is:
+      {{ title }}
+
+      The web is about following: 
+      {{ topics }}
+name: SEO 助手
+description: "help write SEO "
+tests:
+  - id: 1700128491106-yqo45eT_p26ndkP2
+    parameters:
+      title: talk with robert mao
+      topics: about AI, bockchain, crypto, startup, entrprenuership and beyond
+    createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+    output: >-
+      Title: An Engaging Conversation with Robert Mao - AI, Blockchain, Crypto,
+      Startup, Entrepreneurship, and Beyond
+
+
+      Description: Discover an illuminating discussion with Robert Mao, an expert in AI, blockchain, crypto, startups, and entrepreneurship. Gain valuable insights into the cutting-edge technologies shaping our future and explore exciting opportunities in these fields and more. Join the conversation now.
+  - id: 1700128522983-NVYOkeOlIXUj9Bxf
+    parameters:
+      title: ArcBlock official website
+      topics: anything about ArcBlock
+    createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+    output: >-
+      Title: ArcBlock - Empowering Next-Generation Blockchain Solutions |
+      Official Website
+
+
+      Description: Discover how ArcBlock is revolutionizing the blockchain industry with its cutting-edge technology and innovative solutions. Explore our official website to learn more about our comprehensive range of services, products, and partnerships. Stay updated with the latest advancements in blockchain technology and join the ArcBlock community for a brighter decentralized future.
