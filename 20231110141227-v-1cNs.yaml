@@ -4,20 +4,16 @@ updatedAt: 2023-11-10T22:12:27.156Z
 createdBy: ""
 updatedBy: ""
 prompts:
-  - id: NPhSDrUNPsJQ7fPKCCVvI
+  - id: 7W3dM89ueKno3Ild8Ukv8
     role: call-prompt
-    output: BROKE test
+    output: 翻译诗词为图片prompt
     template:
-      id: "355130937131925504"
-      name: CRISPE test
+      id: 20230929091812-WfFcqz
+      name: 翻译诗词为图片prompt
     parameters:
-      Capacity_and_role: 心理咨询师
-      Insight: 使用精神分析法分析任何问题
-      Statement: "{{ stament }}"
-      Personality: 温和
-      Experiment: 没有
-  - id: u9rdysqavwVGOtbm6sEUt
-    content: 把下面展开为一篇文章： {{ BROKE test }}
+      poem: 日照香炉生紫烟，遥望瀑布挂前川
+  - id: enazwppbPFEktJLiaNw6F
+    content: /draw {{ 翻译诗词为图片prompt }}
     role: user
 name: 调用测试
 temperature: 0.9
