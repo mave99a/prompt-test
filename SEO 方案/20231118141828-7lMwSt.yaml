@@ -1,0 +1,26 @@
+id: 20231118141828-7lMwSt
+createdAt: 2023-11-18T22:18:28.668Z
+updatedAt: 2023-11-18T22:18:28.668Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: qm7awfCRTs9bmwshrgDqH
+    role: call-prompt
+    output: SEO 助手
+    template:
+      id: 20231116015202-G6sDJT
+      name: SEO 助手
+    parameters:
+      title: "{{ title }}"
+  - id: 97pUwSVtF5OePovWWnTj9
+    role: call-prompt
+    output: 转换为JSON格式
+    template:
+      id: 20231118141716-lNRxqY
+      name: 转换为JSON格式
+    parameters:
+      input: "{{ SEO 助手 }}"
+  - id: mEyThtz-C73v7mn4-jlRr
+    role: user
+    content: ""
+name: seo 助手API
