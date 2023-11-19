@@ -1,0 +1,26 @@
+id: 20231119104125-X68RmH
+createdAt: 2023-11-19T18:41:25.378Z
+updatedAt: 2023-11-19T18:41:25.378Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: pB62sUNPykIvs3IF9IwUO
+    role: call-dataset
+    output: var-9Gpjx
+    parameters:
+      query: "{{ keyword }}"
+    vectorStore:
+      id: pWW80VDuNA3wfvKO
+      name: DID 文章 Dataset
+  - id: zC-tRyYnBUIgFPGHfW2A-
+    role: user
+    content: >-
+      
+      Write a one liner about {{ keyword }} based on the below "Background" information. 
+
+
+      ## Background ## 
+       {{ var-9Gpjx }}
+parameters:
+  keyword: {}
+name: test dataset
