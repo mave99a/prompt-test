@@ -6,7 +6,7 @@ updatedBy: ""
 prompts:
   - id: kSQPuh5xtFOoy2Lvl20nO
     role: call-api
-    output: SERP
+    output: var1
     method: get
     url: https://serpapi.com/search.json?engine=google&q={{keywork}}&
       api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
@@ -17,12 +17,17 @@ prompts:
       //var today = new Date();
       //return today.getMonth() + '/' + today.getDate();
 
-      var x =  await context.get("SERP");
+      var x =  await context.get("var1")
 
-      return x; 
+      return {a:x}; 
   - id: 4QA4xRyCVOjTKz0yYcw7S
     role: user
-    content: "what happened on this date in history:  {{ res }}"
+    content: |-
+      what happened on this date in history: 
+       {{ res }}
+  - id: Ggu8OBBcuBUmc6Jc5v1zr
+    content: output in Chinese
+    role: user
 parameters:
   keywork: {}
 name: Test API call
