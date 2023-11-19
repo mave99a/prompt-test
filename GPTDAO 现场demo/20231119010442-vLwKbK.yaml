@@ -1,0 +1,15 @@
+id: 20231119010442-vLwKbK
+createdAt: 2023-11-19T09:04:42.946Z
+updatedAt: 2023-11-19T09:04:42.946Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: c1Vmn5nsOo1ZfEZ8Ov1KY
+    role: user
+    content: 起{{ n }}个随机的中文名字，姓必须为{{ family_name }}, 适用于{{ sex}}, 采用{{ book }} 里的人物风格。
+parameters:
+  n: {}
+  book: {}
+  family_name: {}
+  sex: {}
+name: 起名字
