@@ -11,7 +11,7 @@ prompts:
       id: 20231119010442-vLwKbK
       name: 起名字
     parameters:
-      n: "2"
+      n: "5"
       family_name: 冒
       sex: 男
       book: 射雕英雄传

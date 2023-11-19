@@ -8,7 +8,7 @@ prompts:
     role: user
     content: 起{{ n }}个随机的中文名字，姓必须为{{ family_name }}, 适用于{{ sex}}, 采用{{ book }} 里的人物风格。
   - id: bBJiQjqJfghFoNbFYBRuv
-    content: 请只输出名字本身，采用“，”分割
+    content: 请输出名字，采用“，”分割
     role: user
 parameters:
   n: {}
@@ -26,7 +26,7 @@ tests:
       sex: 男
       book: 一剪梅
     createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
-    output: "草莽英雄，铁心 "
+    output: 张书童，张琅琊
   - id: 1700385281606-urovlrzN05OdyV4N
     parameters:
       n: "2"
@@ -34,4 +34,4 @@ tests:
       sex: 女
       book: 一剪梅
     createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
-    output: 秋羽，瑶琴
+    output: 张香蕉，张石榴
