@@ -22,5 +22,7 @@ prompts:
       input: "{{ SEO 助手 }}"
   - id: mEyThtz-C73v7mn4-jlRr
     role: user
-    content: ""
+    content: |-
+      output whatever below: 
+      {{ 转换为JSON格式 }} 
 name: seo 助手API

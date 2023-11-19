@@ -26,6 +26,7 @@ prompts:
       ## 输出格式 ##
       title: 
       description:
+      keywords:
     role: user
   - id: IVV7oXsg5AxNNuKCnR64F
     content: 请用中文输出
