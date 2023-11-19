@@ -17,3 +17,4 @@ prompts:
     role: user
 name: 调用测试
 temperature: 0.9
+parameters: {}

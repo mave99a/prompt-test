@@ -1,3 +1,8 @@
+id: "355166348201951232"
+createdAt: 2023-11-19T09:22:36.293Z
+updatedAt: 2023-09-08T01:48:12.484Z
+createdBy: ""
+updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
 prompts:
   - id: lw89HAQK8Ew-YnMc402eN
     content: >-
@@ -134,6 +139,3 @@ prompts:
     role: system
 description: https://waytoagi.feishu.cn/wiki/EvrRwlyLviLcL6knFSdc8E40nl2
 name: PBL 方案
-id: "355166348201951232"
-updatedAt: 2023-09-08T01:48:12.484Z
-updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og

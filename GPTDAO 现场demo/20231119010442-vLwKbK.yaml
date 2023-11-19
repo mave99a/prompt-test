@@ -8,7 +8,10 @@ prompts:
     role: user
     content: 起{{ n }}个随机的中文名字，姓必须为{{ family_name }}, 适用于{{ sex}}, 采用{{ book }} 里的人物风格。
   - id: bBJiQjqJfghFoNbFYBRuv
-    content: 请输出名字，采用“，”分割
+    content: 请输出名字，采用“，”分割。
+    role: user
+  - id: YLimtn1aiTGb5Z2Lo8OAr
+    content: 请用中文输出
     role: user
 parameters:
   n: {}
