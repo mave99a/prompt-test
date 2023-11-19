@@ -10,9 +10,6 @@ prompts:
   - id: bBJiQjqJfghFoNbFYBRuv
     content: 请输出名字，采用“，”分割。
     role: user
-  - id: YLimtn1aiTGb5Z2Lo8OAr
-    content: 请用中文输出
-    role: user
 parameters:
   n: {}
   book: {}
