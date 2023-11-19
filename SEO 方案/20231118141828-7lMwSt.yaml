@@ -23,6 +23,6 @@ prompts:
   - id: mEyThtz-C73v7mn4-jlRr
     role: user
     content: |-
-      output whatever below: 
+      output whatever below exactly as what it is: 
       {{ 转换为JSON格式 }} 
 name: seo 助手API
