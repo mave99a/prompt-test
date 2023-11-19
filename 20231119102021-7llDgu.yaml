@@ -1,0 +1,28 @@
+id: 20231119102021-7llDgu
+createdAt: 2023-11-19T18:20:21.534Z
+updatedAt: 2023-11-19T18:20:21.534Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: kSQPuh5xtFOoy2Lvl20nO
+    role: call-api
+    output: SERP
+    method: get
+    url: https://serpapi.com/search.json?engine=google&q={{keywork}}&
+      api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
+  - id: xcnfFCbN0s8Wwfm1aNYK5
+    role: call-function
+    output: res
+    code: |-
+      //var today = new Date();
+      //return today.getMonth() + '/' + today.getDate();
+
+      var x =  await context.get("SERP");
+
+      return x; 
+  - id: 4QA4xRyCVOjTKz0yYcw7S
+    role: user
+    content: "what happened on this date in history:  {{ res }}"
+parameters:
+  keywork: {}
+name: Test API call
