@@ -12,9 +12,6 @@ prompts:
       name: 翻译诗词为图片prompt
     parameters:
       poem: 日照香炉生紫烟，遥望瀑布挂前川
-  - id: enazwppbPFEktJLiaNw6F
-    content: /draw {{ 翻译诗词为图片prompt }}
-    role: user
 name: 调用测试
 temperature: 0.9
 parameters: {}
