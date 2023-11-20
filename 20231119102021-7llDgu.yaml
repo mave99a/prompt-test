@@ -8,26 +8,15 @@ prompts:
     role: call-api
     output: var1
     method: get
-    url: https://serpapi.com/search.json?engine=google&q={{keywork}}&
-      api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
-  - id: xcnfFCbN0s8Wwfm1aNYK5
-    role: call-function
-    output: res
-    code: |-
-      //var today = new Date();
-      //return today.getMonth() + '/' + today.getDate();
-
-      var x =  await context.get("var1")
-
-      return {a:x}; 
-  - id: 4QA4xRyCVOjTKz0yYcw7S
-    role: user
-    content: |-
-      what happened on this date in history: 
-       {{ res }}
-  - id: Ggu8OBBcuBUmc6Jc5v1zr
-    content: output in Chinese
+    url: https://serpapi.com/search.json?q={{keywork}}&api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
+  - id: J6suHKK8WQltCMuKiZ1YS
+    content: "output JSON: {{ var1.twitter_results }}"
     role: user
 parameters:
   keywork: {}
 name: Test API call
+tests:
+  - id: 1700463127947-un8fPLeotyS_sEIJ
+    parameters:
+      keywork: arcblock
+    createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
