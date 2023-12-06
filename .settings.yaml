@@ -1,0 +1,17 @@
+_id: vUYrNnedGnWcvhU3
+name: Prompt Framework playground
+description: Popular framework for writing prompts
+model: gpt-3.5-turbo
+createdAt: 2023-09-07T22:46:28.539Z
+updatedAt: 2023-12-06T07:33:58.884Z
+createdBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+pinnedAt: null
+icon: https://www.robertmao.com/image-bin/uploads/ad4c3fef05e2841da5b17fb6a4e2e34b.png
+gitType: null
+temperature: null
+topP: null
+presencePenalty: null
+frequencyPenalty: null
+maxTokens: null
+gitAutoSync: true
