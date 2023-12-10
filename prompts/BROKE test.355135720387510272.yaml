@@ -1,4 +1,32 @@
+id: "355135720387510272"
+type: prompt
 name: BROKE test
+parameters:
+  - id: Zc6bhrIdBpT9cbFpMkaZK
+    key: background
+    multiline: true
+    value: 我想写一篇小说，讲述中国在Covid疫情下封城封国三年的荒唐故事
+    type: string
+  - id: wUKwS5s44qseGz3Y8Us0l
+    key: role
+    value: 你扮演一位优秀的作家
+    type: string
+  - id: HBKAACd4lKjndXof97Zfv
+    key: Objective
+    value: 帮我写一本短篇小说的提纲。 请给出小说的标题、故事梗概、章节的标题和梗概
+    type: string
+  - id: OP6sxK8V74ZIjmPZUpAnc
+    key: evolve
+    value: |-
+      请采用中文输出
+
+      男主角的名字叫 冒海峰 女主角的名字叫 伊翠翠
+    type: string
+    multiline: true
+  - id: HaassoLXe0IXFzAk1V1Wz
+    key: keyresult
+    value: 讲述在瘟疫流行的时代的追求自由的年轻人的爱情故事
+    type: string
 description: |+
   background
   role
@@ -7,42 +35,30 @@ description: |+
   evolve 
 
 prompts:
-  - id: 9tGYZg3Ld-4J2SVnLFfpC
-    content: "{{background}}"
-    role: system
-  - id: Vw9qhIOtfqE1SX_XPdFQV
-    content: "{{role}}"
-    role: system
-  - id: QcRMHCjSePS_qwvEJT1B8
-    content: "{{Objective}}"
-    role: system
-  - id: jC-pWzXE1tPAEteH7pAcr
-    content: "{{keyresult}}"
-    role: system
-  - id: 76TyMIiQdrsoO6ahICu3V
-    content: "{{ evolve }}"
-    role: system
-parameters:
-  background:
-    multiline: true
-    value: 我想写一篇小说，讲述中国在Covid疫情下封城封国三年的荒唐故事
-    type: string
-  role:
-    value: 你扮演一位优秀的作家
-    type: string
-  Objective:
-    value: 帮我写一本短篇小说的提纲。 请给出小说的标题、故事梗概、章节的标题和梗概
-    type: string
-  evolve:
-    value: |-
-      请采用中文输出
-
-      男主角的名字叫 冒海峰 女主角的名字叫 伊翠翠
-    type: string
-    multiline: true
-  keyresult:
-    value: 讲述在瘟疫流行的时代的追求自由的年轻人的爱情故事
-    type: string
-id: "355135720387510272"
+  - type: message
+    data:
+      id: 9tGYZg3Ld-4J2SVnLFfpC
+      role: system
+      content: "{{background}}"
+  - type: message
+    data:
+      id: Vw9qhIOtfqE1SX_XPdFQV
+      role: system
+      content: "{{role}}"
+  - type: message
+    data:
+      id: QcRMHCjSePS_qwvEJT1B8
+      role: system
+      content: "{{Objective}}"
+  - type: message
+    data:
+      id: jC-pWzXE1tPAEteH7pAcr
+      role: system
+      content: "{{keyresult}}"
+  - type: message
+    data:
+      id: 76TyMIiQdrsoO6ahICu3V
+      role: system
+      content: "{{ evolve }}"
 updatedAt: 2023-09-08T00:34:34.186Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og

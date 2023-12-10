@@ -1,14 +1,18 @@
 id: 20231118141716-lNRxqY
+type: prompt
+name: 转换为JSON格式
+parameters:
+  - id: l1n7op8NQxGeWfZ6CAqGk
+    key: input
+prompts:
+  - type: message
+    data:
+      id: pwxZvkEfroztvCZj3Orxg
+      role: user
+      content: |-
+        请把以下格式化的输入，转换为 JSON格式
+        {{ input }}
 createdAt: 2023-11-18T22:17:16.751Z
 updatedAt: 2023-11-18T22:17:16.751Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: pwxZvkEfroztvCZj3Orxg
-    role: user
-    content: |-
-      请把以下格式化的输入，转换为 JSON格式
-      {{ input }}
-name: 转换为JSON格式
-parameters:
-  input: {}

@@ -1,38 +1,40 @@
 id: 20231116015202-G6sDJT
+type: prompt
+name: SEO 助手
+parameters:
+  - id: lxFU3QRmGlCDAnE4yAHE0
+    key: title
+description: "help write SEO "
+prompts:
+  - type: message
+    data:
+      id: PPDTNyHGm7k2jiOCkRmUF
+      role: user
+      content: |-
+        Write SEO friendly webpage title and descriptions. 
+        The original title is:
+        {{ title }}
+
+        The web is about following: 
+        {{ 根据标题产生可能的主题 }}
+  - type: message
+    data:
+      id: G2KUJHjzmeD58H2EqulIn
+      role: user
+      content: |-
+        ## 输出格式 ##
+        title: 
+        description:
+        keywords:
+  - type: message
+    data:
+      id: IVV7oXsg5AxNNuKCnR64F
+      role: user
+      content: 请用中文输出
 createdAt: 2023-11-16T09:52:02.355Z
 updatedAt: 2023-11-16T09:52:02.355Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: D14yVRRY98ELEjL3Mg7bF
-    role: call-prompt
-    output: 根据标题产生可能的主题
-    template:
-      id: 20231118141258-oBwTes
-      name: 根据标题产生可能的主题
-    parameters:
-      标题: "{{ title }}"
-  - id: PPDTNyHGm7k2jiOCkRmUF
-    role: user
-    content: |-
-      Write SEO friendly webpage title and descriptions. 
-      The original title is:
-      {{ title }}
-
-      The web is about following: 
-      {{ 根据标题产生可能的主题 }}
-  - id: G2KUJHjzmeD58H2EqulIn
-    content: |-
-      ## 输出格式 ##
-      title: 
-      description:
-      keywords:
-    role: user
-  - id: IVV7oXsg5AxNNuKCnR64F
-    content: 请用中文输出
-    role: user
-name: SEO 助手
-description: "help write SEO "
 tests:
   - id: 1700128491106-yqo45eT_p26ndkP2
     parameters:
@@ -56,13 +58,3 @@ tests:
 
 
       Description: Discover how ArcBlock is revolutionizing the blockchain industry with its cutting-edge technology and innovative solutions. Explore our official website to learn more about our comprehensive range of services, products, and partnerships. Stay updated with the latest advancements in blockchain technology and join the ArcBlock community for a brighter decentralized future.
-parameters:
-  topics:
-    type: language
-    options:
-      MNYrUZMOh8SjMrNy:
-        index: 0
-        data:
-          id: MNYrUZMOh8SjMrNy
-          label: ""
-          value: ""

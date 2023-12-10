@@ -1,6 +1,6 @@
 # Prompt Framework playground
 
-
+Popular framework for writing prompts
 
 ## Install And Run
 

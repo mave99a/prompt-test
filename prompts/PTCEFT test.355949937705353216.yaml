@@ -1,5 +1,37 @@
-versionNote: ""
+id: "355949937705353216"
+type: prompt
 name: PTCEFT test
+parameters:
+  - id: WH5cCG5fDdfLypsM0CL74
+    key: persona
+    value: 你是一个专业的小说家
+    type: string
+  - id: i1wL9aLwaUYgeRXRiRzFW
+    key: task
+    value: 请下一篇言情小说的故事梗概
+    multiline: true
+    type: string
+  - id: 6ugxYeQFxVIF7COnaUYzX
+    key: context
+    multiline: true
+    value: 张勇和李丽相识于华山论剑的活动上， 在令狐冲和张三丰引荐下开始一段江湖儿女情
+    type: string
+  - id: e8U7187WLAL9MkGf9K94U
+    key: example
+    type: string
+  - id: JkLwkRucGKgcvtlBZrsZn
+    key: format
+    multiline: true
+    value: |
+      < 小说标题 >
+      < 内容简介 >
+      < 章节目录 >
+    type: string
+  - id: fNzDeTmkrcyFgiVMmbnkI
+    key: tone
+    value: 采用古龙的文风
+    type: string
+    multiline: true
 description: |-
   Persona 
   Task
@@ -10,57 +42,43 @@ description: |-
 
   https://twitter.com/itsPaulAi
 prompts:
-  - id: k5EtXbDVp-pzFVsl3uT_I
-    content: "{{persona}}"
-    role: system
-  - id: MafvByX9ITIMV-RbojFmW
-    content: "{{task}}"
-    role: system
-  - id: 2frUO9juOOMNIlStnc1NS
-    content: |-
-      Context: 
-      {{context}}
-    role: system
-  - id: ilRG_8agrei9CmJ96s1EP
-    content: |-
-      Example: 
-      {{example}}
-    role: system
-  - id: 3FiykxbaNoiEr-HdPG8Jm
-    content: |-
-      Format:
-      {{format}}
-    role: system
-  - id: naQYpMBtuiOp1GoSjgAUo
-    content: |-
-      Tone: 
-      {{tone}}
-    role: system
-parameters:
-  persona:
-    value: 你是一个专业的小说家
-    type: string
-  task:
-    value: 请下一篇言情小说的故事梗概
-    multiline: true
-    type: string
-  context:
-    multiline: true
-    value: 张勇和李丽相识于华山论剑的活动上， 在令狐冲和张三丰引荐下开始一段江湖儿女情
-    type: string
-  example:
-    type: string
-  format:
-    multiline: true
-    value: |
-      < 小说标题 >
-      < 内容简介 >
-      < 章节目录 >
-    type: string
-  tone:
-    value: 采用古龙的文风
-    type: string
-    multiline: true
-id: "355949937705353216"
+  - type: message
+    data:
+      id: k5EtXbDVp-pzFVsl3uT_I
+      role: system
+      content: "{{persona}}"
+  - type: message
+    data:
+      id: MafvByX9ITIMV-RbojFmW
+      role: system
+      content: "{{task}}"
+  - type: message
+    data:
+      id: 2frUO9juOOMNIlStnc1NS
+      role: system
+      content: |-
+        Context: 
+        {{context}}
+  - type: message
+    data:
+      id: ilRG_8agrei9CmJ96s1EP
+      role: system
+      content: |-
+        Example: 
+        {{example}}
+  - type: message
+    data:
+      id: 3FiykxbaNoiEr-HdPG8Jm
+      role: system
+      content: |-
+        Format:
+        {{format}}
+  - type: message
+    data:
+      id: naQYpMBtuiOp1GoSjgAUo
+      role: system
+      content: |-
+        Tone: 
+        {{tone}}
 updatedAt: 2023-09-10T05:45:32.948Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og

@@ -1,57 +1,21 @@
+id: "355121620446085120"
+type: prompt
 name: ICIO test1
-model: gpt-3.5-turbo-16k
-description: >-
-  ICIO framework:
-
-  Instruction
-
-  Context
-
-  Input Data
-
-  Output indicator
-
-
-  ref：
-
-  https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/guides/prompts-intro.md 
-prompts:
-  - id: Sp6A8oXjVWcT5yMSSICpb
-    content: |-
-      ### Instruction ###
-
-      {{Instruction}}
-    role: system
-  - id: Uui-5fGqGTjY-0W2ebXMc
-    content: |-
-      ### Context ###
-
-      {{Context}}
-    role: system
-  - id: _CXlsh-4MDme6hzLghfnl
-    content: |-
-      ### Input Data ###
-
-      {{Input}}
-    role: system
-  - id: 4LnuSmcWS5dpg0a5rP86_
-    content: |-
-      ### Output indicator ###
-
-      {{output}}
-    role: system
 parameters:
-  Instruction:
+  - id: dZ5lfrWkKWB3J3PuXDWZE
+    key: Instruction
     multiline: true
     value: 分析AIGNE这个产品的市场策略
     type: string
-  Context:
+  - id: OJa0JWdFgXd23yeqPZUtk
+    key: Context
     multiline: true
     value: |
       - 当前LLMOp市场刚刚开始
       - LLMOp 是 LLM 的 Devop， 也就是LLM作为正规服务所需要的运营管理
     type: string
-  Input:
+  - id: QSw6BlI7NqRtEvozsaihi
+    key: Input
     multiline: true
     value: >-
       这是AIGNE的设计和介绍：
@@ -119,7 +83,8 @@ parameters:
 
       发布到Store
     type: string
-  output:
+  - id: M45ikE2jhtBFXCqTFMjhh
+    key: output
     multiline: true
     value: |
       输出的报告中需要涉及以下部分： 
@@ -129,6 +94,54 @@ parameters:
       3. SWOT 分析
       4. 建议的发布过程
     type: string
-id: "355121620446085120"
+description: >-
+  ICIO framework:
+
+  Instruction
+
+  Context
+
+  Input Data
+
+  Output indicator
+
+
+  ref：
+
+  https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/guides/prompts-intro.md 
+prompts:
+  - type: message
+    data:
+      id: Sp6A8oXjVWcT5yMSSICpb
+      role: system
+      content: |-
+        ### Instruction ###
+
+        {{Instruction}}
+  - type: message
+    data:
+      id: Uui-5fGqGTjY-0W2ebXMc
+      role: system
+      content: |-
+        ### Context ###
+
+        {{Context}}
+  - type: message
+    data:
+      id: _CXlsh-4MDme6hzLghfnl
+      role: system
+      content: |-
+        ### Input Data ###
+
+        {{Input}}
+  - type: message
+    data:
+      id: 4LnuSmcWS5dpg0a5rP86_
+      role: system
+      content: |-
+        ### Output indicator ###
+
+        {{output}}
 updatedAt: 2023-09-07T22:58:15.710Z
 updatedBy: z1XzhTcWwDUvsuoyzRjommRFZNgSz54x3og
+model: gpt-3.5-turbo-16k

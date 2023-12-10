@@ -1,28 +1,38 @@
 id: 20231120121927-52R5uf
+type: prompt
+name: 情感顾问
+parameters:
+  - id: SlD6ieHPciMe03DoY7vbW
+    key: conversation
+    multiline: true
+    type: string
+description: 通过聊天的内容判断对象是否可能是情感操纵者，或者刻意打压等。
+prompts:
+  - type: message
+    data:
+      id: 3aP4L_nl4qIuOSI-ZhjUG
+      role: system
+      content: 你是一个经验丰富的心理咨询师和情感关系顾问，请你根据用户给你提供的和另一个人的对话记录，分析他们之间的关系健康指数。
+        尤其需要判断对方是否是一个情感操纵者，是否对用户存在刻意的打压、欺骗、自我贬低等话术操纵的行为。
+  - type: message
+    data:
+      id: gSMrhSrc4ui7u_-0Ui7r6
+      role: user
+      content: "## 输出格式 ##两者关系：关系是否健康：是否是恋人：是否有操纵行为：是否建议两者交往： 分析理由：对对话中每一个人的独立分析和建议： "
+  - type: message
+    data:
+      id: U8BhpMjygayZ3k3wCQ3_3
+      role: user
+      content: 下面是用户和其朋友之间的对话： {{conversation}}
+  - type: message
+    data:
+      id: iKcbHiUK6DCaEhP4e6iIn
+      role: user
+      content: 如果不能判断，请告诉用户不能判断的原因（例如内容过少等），请严格按照 “输出格式” 来输出。
 createdAt: 2023-10-22T22:31:41.444Z
 updatedAt: 2023-10-22T22:31:41.444Z
 createdBy: ""
 updatedBy: ""
-name: 情感顾问
-description: 通过聊天的内容判断对象是否可能是情感操纵者，或者刻意打压等。
-prompts:
-  - id: 3aP4L_nl4qIuOSI-ZhjUG
-    content: 你是一个经验丰富的心理咨询师和情感关系顾问，请你根据用户给你提供的和另一个人的对话记录，分析他们之间的关系健康指数。
-      尤其需要判断对方是否是一个情感操纵者，是否对用户存在刻意的打压、欺骗、自我贬低等话术操纵的行为。
-    role: system
-  - id: gSMrhSrc4ui7u_-0Ui7r6
-    content: "## 输出格式 ##两者关系：关系是否健康：是否是恋人：是否有操纵行为：是否建议两者交往： 分析理由：对对话中每一个人的独立分析和建议： "
-    role: user
-  - id: U8BhpMjygayZ3k3wCQ3_3
-    content: 下面是用户和其朋友之间的对话： {{conversation}}
-    role: user
-  - id: iKcbHiUK6DCaEhP4e6iIn
-    content: 如果不能判断，请告诉用户不能判断的原因（例如内容过少等），请严格按照 “输出格式” 来输出。
-    role: user
-parameters:
-  conversation:
-    multiline: true
-    type: string
 tests:
   - id: 1698015615015-f2EpqkbdHO49cqAZ
     parameters:
@@ -124,7 +134,3 @@ tests:
 
 
       请注意，以上分析仅基于对话片段而得出的初步判断，实际情况可能更为复杂。对于这种关系问题，建议寻求专业心理咨询师的帮助以获得更全面的指导。
-projectId: Kp2AjeDyp8WKDMPg
-ref: main
-parent:
-  - prompts

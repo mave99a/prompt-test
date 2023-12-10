@@ -1,21 +1,30 @@
 id: 20231119010442-vLwKbK
+type: prompt
+name: 起名字
+parameters:
+  - id: q5T7lRt1Y62FtH92UwUok
+    key: n
+  - id: QsQNgaGNvEUcCAJ9AVZA7
+    key: book
+  - id: IEFFoL34pKAMOnnu16rCL
+    key: family_name
+  - id: SKWhS4BpoFXIq7vJygcC2
+    key: sex
+prompts:
+  - type: message
+    data:
+      id: c1Vmn5nsOo1ZfEZ8Ov1KY
+      role: user
+      content: 起{{ n }}个随机的中文名字，姓必须为{{ family_name }}, 适用于{{ sex}}, 采用{{ book }} 里的人物风格。
+  - type: message
+    data:
+      id: bBJiQjqJfghFoNbFYBRuv
+      role: user
+      content: 请输出名字，采用“，”分割。
 createdAt: 2023-11-19T09:04:42.946Z
 updatedAt: 2023-11-19T09:04:42.946Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: c1Vmn5nsOo1ZfEZ8Ov1KY
-    role: user
-    content: 起{{ n }}个随机的中文名字，姓必须为{{ family_name }}, 适用于{{ sex}}, 采用{{ book }} 里的人物风格。
-  - id: bBJiQjqJfghFoNbFYBRuv
-    content: 请输出名字，采用“，”分割。
-    role: user
-parameters:
-  n: {}
-  book: {}
-  family_name: {}
-  sex: {}
-name: 起名字
 tests:
   - id: 1700385266946-TAIbEAdIvzXnXrGG
     parameters:

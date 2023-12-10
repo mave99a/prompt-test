@@ -1,17 +1,21 @@
 id: 20230929091812-WfFcqz
+type: prompt
+name: 翻译诗词为图片prompt
+parameters:
+  - id: FBUHRvvFBspX8RFto9awl
+    key: poem
+prompts:
+  - type: message
+    data:
+      id: qIWtXKSO78XPseEwz6HxZ
+      role: system
+      content: |-
+        请把下面的诗词中描写的景色简短句子简要描述出来，用英文输出。 
+
+        {{poem}}
 createdAt: 2023-09-29T16:18:12.018Z
 updatedAt: 2023-09-29T16:18:12.018Z
 createdBy: ""
 updatedBy: ""
-parameters:
-  poem: {}
-name: 翻译诗词为图片prompt
-model: gpt-3.5-turbo
 temperature: 0.7
-prompts:
-  - id: qIWtXKSO78XPseEwz6HxZ
-    content: |-
-      请把下面的诗词中描写的景色简短句子简要描述出来，用英文输出。 
-
-      {{poem}}
-    role: system
+model: gpt-3.5-turbo

@@ -1,33 +1,29 @@
 id: 20231119010823-vOvLIB
+type: prompt
+name: 写故事
+parameters:
+  - id: gqG8aw24gsV8KXuFGrLJV
+    key: 类型
+  - id: 7tIe26z5L1x62boI1ydj9
+    key: background
+    type: string
+    multiline: true
+prompts:
+  - type: message
+    data:
+      id: BUq6TeLa5D1tSooLkzTmP
+      role: user
+      content: |-
+        写一个{{ 类型 }}故事，采用一下的这些人物名字。
+        {{ 起名字 }}
+  - type: message
+    data:
+      id: 28bFWLPB9rj6sScyvlR07
+      role: user
+      content: |-
+        故事的背景：
+        {{ background }}
 createdAt: 2023-11-19T09:08:23.209Z
 updatedAt: 2023-11-19T09:08:23.209Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: lXh8Ovcvi8x7CMHei7V8i
-    role: call-prompt
-    output: 起名字
-    template:
-      id: 20231119010442-vLwKbK
-      name: 起名字
-    parameters:
-      n: "5"
-      family_name: 冒
-      sex: 男
-      book: 射雕英雄传
-  - id: BUq6TeLa5D1tSooLkzTmP
-    content: |-
-      写一个{{ 类型 }}故事，采用一下的这些人物名字。
-      {{ 起名字 }}
-    role: user
-  - id: 28bFWLPB9rj6sScyvlR07
-    content: |-
-      故事的背景：
-      {{ background }}
-    role: user
-parameters:
-  类型: {}
-  background:
-    type: string
-    multiline: true
-name: 写故事

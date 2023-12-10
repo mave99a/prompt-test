@@ -1,20 +1,19 @@
 id: 20231119102021-7llDgu
+type: prompt
+name: Test API call
+parameters:
+  - id: zbmSGMgILKovuN3Ngvvay
+    key: keywork
+prompts:
+  - type: message
+    data:
+      id: J6suHKK8WQltCMuKiZ1YS
+      role: user
+      content: "output JSON: {{ var1.twitter_results }}"
 createdAt: 2023-11-19T18:20:21.534Z
 updatedAt: 2023-11-19T18:20:21.534Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: kSQPuh5xtFOoy2Lvl20nO
-    role: call-api
-    output: var1
-    method: get
-    url: https://serpapi.com/search.json?q={{keywork}}&api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
-  - id: J6suHKK8WQltCMuKiZ1YS
-    content: "output JSON: {{ var1.twitter_results }}"
-    role: user
-parameters:
-  keywork: {}
-name: Test API call
 tests:
   - id: 1700463127947-un8fPLeotyS_sEIJ
     parameters:

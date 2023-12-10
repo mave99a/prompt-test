@@ -1,14 +1,18 @@
 id: 20231118141258-oBwTes
+type: prompt
+name: 根据标题产生可能的主题
+parameters:
+  - id: 8pw2hmi2tlFudHBIXBPX9
+    key: 标题
+prompts:
+  - type: message
+    data:
+      id: zS-o9KtZ9fPI_hf2xnDqN
+      role: user
+      content: |-
+        请根据用户给出的网站标题，产生这个网站可能适合的关键词：
+        {{ 标题 }} 
 createdAt: 2023-11-18T22:12:58.813Z
 updatedAt: 2023-11-18T22:12:58.813Z
 createdBy: ""
 updatedBy: ""
-prompts:
-  - id: zS-o9KtZ9fPI_hf2xnDqN
-    role: user
-    content: |-
-      请根据用户给出的网站标题，产生这个网站可能适合的关键词：
-      {{ 标题 }} 
-name: 根据标题产生可能的主题
-parameters:
-  标题: {}
