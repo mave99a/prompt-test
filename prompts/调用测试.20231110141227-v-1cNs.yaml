@@ -8,3 +8,5 @@ updatedAt: 2023-11-10T22:12:27.156Z
 createdBy: ""
 updatedBy: ""
 temperature: 0.9
+tags:
+  - FOO
